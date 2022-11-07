@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dr7dsmoo44df6"]
+
+[ext_resource type="Texture2D" uid="uid://cngtrgf7dnkv0" path="res://Assets/Sprites/Background.png" id="1_pouxt"]
+[ext_resource type="FontFile" uid="uid://c0oxaxjt5seox" path="res://Assets/Fonts/Lato-Regular.ttf" id="2_aihif"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q5j4v"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_niwyn"]
+font = ExtResource("2_aihif")
+font_size = 26
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1200.0
+offset_bottom = 600.0
+texture = ExtResource("1_pouxt")
+ignore_texture_size = true
+
+[node name="Label" type="Label" parent="Background"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -102.0
+offset_right = 102.0
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_aihif")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_q5j4v")
+text = "13:42"
+label_settings = SubResource("LabelSettings_niwyn")
+horizontal_alignment = 1
+vertical_alignment = 1
